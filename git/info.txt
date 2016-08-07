@@ -19,3 +19,9 @@ git commit -m "Commit description"
 
 Чтобы синхронизировать локальную ветку с удаленной:
 git push origin master
+
+Связать локальную и удаленную ветки(в этом примере связываем мастер ветки):
+git branch --set-upstream-to=origin/master master
+
+Откатываться на локальных коммитах назад можно через:
+git reset --hard  *commit_id*
